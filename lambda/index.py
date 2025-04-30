@@ -30,7 +30,7 @@ def lambda_handler(event, context):
 
             payload = json.dumps({
                 prompt: message
-            })encode("utf-8")
+            }).encode("utf-8")
 
             #Chatさんにききました
             req = urllib.request.Request(
