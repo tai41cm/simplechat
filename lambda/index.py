@@ -26,7 +26,7 @@ MODEL_ID = os.environ.get("MODEL_ID", "us.amazon.nova-lite-v1:0")
 def lambda_handler(event, context):
     try:    
         def fastAPI(message):
-            url = ""
+            url = "https://9aff-34-125-185-88.ngrok-free.app"
 
             payload = json.dumps({
                 prompt: message
